@@ -89,7 +89,7 @@ Rackcraft had no version numbers for its first two weeks: every build was called
 - Five unused blocks retired; the Photonic Spine Router and Topological Core added.
 
 ### 0.7 (2026-10-14): strikes and the ending
-- **The ending:** the IPO, the final fight, the shutdown and the credits.
+- **The ending:** the IPO, the [redacted], the [redacted] and the [redacted].
 - Orbital strikes, the tactical warhead and space debris.
 - **Exchange tiers and surge pricing.**
 - 45 advancements in a Rackcraft tab.
