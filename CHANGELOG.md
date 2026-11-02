@@ -17,13 +17,18 @@ Found a problem with a release? [Open an issue](https://github.com/azerbai/rackc
 
 These are planned, not promised, and there are no dates. The order can change, and feature requests can move things up. Every compat feature is optional: without the other mod, Rackcraft plays exactly as before.
 
-- **Recipes in JEI.** Every Rackcraft machine's recipes, so you can look up how anything is made.
-- **Jade tooltips.** Look at a rack, reactor, Tokamak or Pylon to see its temperature, power, output and health.
 - **Create power, both ways.** Turn Create rotation into Rackcraft power, and Rackcraft power back into rotation. The conversion rates are configurable, so Create-focused packs can balance it their own way.
 - **Rackcraft companies follow FTB Teams.** Making or joining an FTB team makes or joins the matching Rackcraft company.
-- **Fix: structures belong to the default company.** Racks and other machines in generated structures can't be taken over or reassigned. This fix covers worlds that already exist too.
 - **The vehicle line, finished.** More vehicles (helicopters included), and upgrades for line-built vehicles so building one beats buying it.
 - **Megaprojects.** Long late-game builds that use up RackCoin, materials and compute, and leave something permanent behind.
+
+## Rackcraft 2.6.0 (2026-11-02)
+
+- **Ruins are finders keepers.** Machines in Rackcraft structures (abandoned data centers, the Hyperscale Campus, the Military Base, the Moon sites) now belong to nobody, and the first company to use one claims it, free. Before, they all belonged to the default company, so anyone in a company of their own was locked out of every ruin. Ruins in existing worlds work the same way, until someone in the default company uses them. Server operators can move machines between companies with `/company reassign`.
+- **JEI recipe pages** for the Assembly Line (each part in order, the robots, the time and the research needed) and for all 12 processing machines. Items with no recipe, like ores, Moon soil and ruin loot, get a page saying where they come from.
+- **Jade tooltips** for machines and cables: a machine's readings and who owns it, and a cable's paint and status. Hold Shift for the power network and coolant loop.
+
+JEI and Jade are optional: without them, Rackcraft plays exactly as before.
 
 ## Rackcraft 2.5.0 (2026-11-01)
 
