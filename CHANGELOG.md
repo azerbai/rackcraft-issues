@@ -1,8 +1,17 @@
 # Rackcraft changelog
 
-What's coming next, and what changed in each release of Rackcraft, its add-ons and the Rackcraft modpack. The newest is at the top.
+What's coming next, and what changed in each release. There are two parts:
+
+- **[Rackcraft (the mod)](#rackcraft-the-mod)**: Rackcraft and its add-ons, Quartermaster and the Grid Charger
+- **[Rackcraft: The Modpack](#rackcraft-the-modpack)**: the CurseForge modpack built around it
+
+The newest is at the top of each.
 
 Found a problem with a release? [Open an issue](https://github.com/azerbai/rackcraft-issues/issues/new/choose), or type `/rcfeedback` in game.
+
+---
+
+# Rackcraft (the mod)
 
 ## Coming next
 
@@ -15,12 +24,6 @@ These are planned, not promised, and there are no dates. The order can change, a
 - **Fix: structures belong to the default company.** Racks and other machines in generated structures can't be taken over or reassigned. This fix covers worlds that already exist too.
 - **The vehicle line, finished.** More vehicles (helicopters included), and upgrades for line-built vehicles so building one beats buying it.
 - **Megaprojects.** Long late-game builds that use up RackCoin, materials and compute, and leave something permanent behind.
-
----
-
-## Rackcraft Modpack 1.0.0 (2026-11-01)
-
-The first release, on CurseForge. Fabric 1.20.1 with Rackcraft 2.5.0, Quartermaster and the Grid Charger, Create, TaCZ with 50 gun packs, Superb Warfare, Terralith and Tectonic, a 21-chapter quest book, and Essential and Simple Voice Chat for playing with friends.
 
 ## Rackcraft 2.5.0 (2026-11-01)
 
@@ -65,3 +68,18 @@ The first release, on CurseForge. Fabric 1.20.1 with Rackcraft 2.5.0, Quartermas
 ## Rackcraft 2.0.0 (2026-10-20)
 
 The first numbered release: the data center (racks, RackCoin, the Exchange, power, cooling, storage and the Assembly Line), the world (abandoned data centers, the Military Base, weapons and getting around), multiplayer companies, and space (rockets, orbit, the Moon and fusion).
+
+---
+
+# Rackcraft: The Modpack
+
+Each Rackcraft release reaches the modpack as an update, so the mod's changes above apply to the pack too. This part lists what changed in the pack itself: mods added, updated or removed, quests, configs and defaults.
+
+## Coming next
+
+- **Rackcraft updates.** Each new Rackcraft release ships as a pack update, with the quest book updated to match.
+- **Being considered: a server pack** for hosting a dedicated server, instead of hosting from your own game with Essential.
+
+## 1.0.0 (2026-11-01)
+
+The first release, on CurseForge. Fabric 1.20.1 with Rackcraft 2.5.0, Quartermaster and the Grid Charger, Create, TaCZ with 50 gun packs, Superb Warfare, Terralith and Tectonic, a 21-chapter quest book, and Essential and Simple Voice Chat for playing with friends.
