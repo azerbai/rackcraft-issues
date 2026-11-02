@@ -21,7 +21,7 @@ These are planned, not promised, and there are no dates. The order can change, a
 - **The vehicle line, finished.** More vehicles (helicopters included), and upgrades for line-built vehicles so building one beats buying it.
 - **Megaprojects.** Long late-game builds that use up RackCoin, materials and compute, and leave something permanent behind.
 
-## Rackcraft 2.7.0 (2026-11-02)
+## Rackcraft 2.7.0 (coming to CurseForge 2026-11-03)
 
 - **Companies follow FTB Teams.** With FTB Teams installed, your FTB party is your company: same name, same members, and the party owner leads it. If you already had a company, your party takes it over, with its balance, research and machines. Leaving the party leaves the company. Players who aren't in a party keep the company they have.
 - **The Grid Interface**, a new block that connects Rackcraft power to other mods' energy. With Crafts & Additions, an Alternator on a Create shaft powers your grid at about 1 kW per 256 SU. After the cheap new **Grid Export Permit** research, the grid can run an Electric Motor too, but at a poor rate and with a cap, so a fusion ring can't spin Create forever. Server owners can change all the rates in the config.
