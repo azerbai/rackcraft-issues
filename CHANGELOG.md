@@ -17,10 +17,16 @@ Found a problem with a release? [Open an issue](https://github.com/azerbai/rackc
 
 These are planned, not promised, and there are no dates. The order can change, and feature requests can move things up. Every compat feature is optional: without the other mod, Rackcraft plays exactly as before.
 
-- **Create power, both ways.** Turn Create rotation into Rackcraft power, and Rackcraft power back into rotation. The conversion rates are configurable, so Create-focused packs can balance it their own way.
-- **Rackcraft companies follow FTB Teams.** Making or joining an FTB team makes or joins the matching Rackcraft company.
+- **Native Create power blocks.** A Dynamo Coupler and Rack Motor that connect Rackcraft power to Create shafts directly, without Crafts & Additions.
 - **The vehicle line, finished.** More vehicles (helicopters included), and upgrades for line-built vehicles so building one beats buying it.
 - **Megaprojects.** Long late-game builds that use up RackCoin, materials and compute, and leave something permanent behind.
+
+## Rackcraft 2.7.0 (2026-11-02)
+
+- **Companies follow FTB Teams.** With FTB Teams installed, your FTB party is your company: same name, same members, and the party owner leads it. If you already had a company, your party takes it over, with its balance, research and machines. Leaving the party leaves the company. Players who aren't in a party keep the company they have.
+- **The Grid Interface**, a new block that connects Rackcraft power to other mods' energy. With Crafts & Additions, an Alternator on a Create shaft powers your grid at about 1 kW per 256 SU. After the cheap new **Grid Export Permit** research, the grid can run an Electric Motor too, but at a poor rate and with a cap, so a fusion ring can't spin Create forever. Server owners can change all the rates in the config.
+- **Create recipes** (only with Create installed): crush Bauxite Ore and Failed Modules, press Copper Wire, and mix Steel in a heated Basin.
+- **Create Display Links**: show your RackCoin balance, mining rate, share price, a machine's power or a battery's charge on display boards and nixie tubes.
 
 ## Rackcraft 2.6.0 (2026-11-02)
 
