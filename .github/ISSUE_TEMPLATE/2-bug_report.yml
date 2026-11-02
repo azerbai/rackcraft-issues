@@ -1,0 +1,41 @@
+name: Bug report
+description: Something works wrong, but the game doesn't crash.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: And what you expected to happen instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: How can it be made to happen?
+      description: Steps from a fresh start, if you know them. Screenshots or a short video help a lot.
+      placeholder: |
+        1. Place a CRAC unit next to a rack
+        2. Turn the rack on
+        3. The heat overlay shows...
+    validations:
+      required: true
+  - type: input
+    id: rackcraft
+    attributes:
+      label: Rackcraft version
+      placeholder: "2.5.0"
+    validations:
+      required: true
+  - type: input
+    id: pack
+    attributes:
+      label: Modpack (name and version), or "none"
+    validations:
+      required: true
+  - type: textarea
+    id: log
+    attributes:
+      label: Log (optional)
+      description: If anything odd shows up in `.minecraft/logs/latest.log`, attach the file or an https://mclo.gs link.

@@ -1,0 +1,62 @@
+name: Crash report
+description: The game crashed, froze, or closed by itself.
+title: "[Crash] "
+labels: ["crash"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! A crash report is what makes a crash fixable, so please attach it.
+        It's the newest file in `.minecraft/crash-reports/`. No crash report (a freeze, or the game just closed)? Attach `.minecraft/logs/latest.log` instead, before you restart the game.
+  - type: textarea
+    id: log
+    attributes:
+      label: Crash report or log
+      description: Drag the file into this box (or paste an https://mclo.gs link). Attach the whole file, not a few lines.
+    validations:
+      required: true
+  - type: textarea
+    id: doing
+    attributes:
+      label: What were you doing?
+      description: Just before the crash. Placing or breaking a block, opening a screen, joining a world or server, launching something...
+      placeholder: I placed a Server Rack next to a Power Cable and the game closed.
+    validations:
+      required: true
+  - type: dropdown
+    id: again
+    attributes:
+      label: Does it happen again?
+      options:
+        - Every time I do the same thing
+        - Sometimes
+        - Only once so far
+        - I can't get back into the world
+    validations:
+      required: true
+  - type: input
+    id: rackcraft
+    attributes:
+      label: Rackcraft version
+      description: From the mod's file name (rackcraft-2.5.0.jar) or the Mods screen.
+      placeholder: "2.5.0"
+    validations:
+      required: true
+  - type: input
+    id: pack
+    attributes:
+      label: Modpack (name and version), or "none"
+      placeholder: RackCraft Modpack 1.0.0
+    validations:
+      required: true
+  - type: dropdown
+    id: side
+    attributes:
+      label: Where did it crash?
+      options:
+        - Singleplayer
+        - On a server (my game crashed)
+        - On a server (the server crashed)
+        - Not sure
+    validations:
+      required: true
