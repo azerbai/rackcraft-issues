@@ -12,6 +12,8 @@ This is the public issue tracker for **Rackcraft** (a Fabric 1.20.1 mod about bu
 
 In game, `/rcfeedback` shows the link again.
 
+**[Changelog and what's coming next](CHANGELOG.md)**
+
 ## Crash reports
 
 1. Find the newest file in `.minecraft/crash-reports/` (in a launcher like Prism or CurseForge, open the instance's folder first). Drag the whole file into the issue form. Don't paste just the top few lines: the useful part is often near the bottom.
