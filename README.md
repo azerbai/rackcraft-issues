@@ -37,3 +37,7 @@ Labels you'll see:
 - `duplicate`: already reported; follow the linked issue
 
 Please keep issues to one problem each, and search the open issues first.
+
+## About Claude
+
+You may see Claude (Anthropic's AI assistant) listed as a contributor here. It helps write this repository's docs, such as this README and the changelog, and it's the automated triage step described above: it reads new issues, sorts and labels them, and passes crash diagnoses to the developer. It doesn't post its own replies here; the triage comments are fixed messages.
