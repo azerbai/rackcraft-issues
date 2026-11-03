@@ -6,9 +6,9 @@ If you think one of these deserves another look because something has changed, o
 
 ## Rackcraft (the mod)
 
-- **Enemy drone raids.** Hostile drones attacking your base in Superb Warfare worlds.
-- **Fixed-wing aircraft and airships on the Assembly Line.** Ground vehicles (and helicopters, coming next) can be built on the line, but planes and airships stay dealership-only.
+- **Enemy drone raids.** Hostile drones attacking your base in Superb Warfare worlds. They were tried, and they were more annoying than fun in testing and too hard on performance.
+- **Fixed-wing aircraft and airships on the Assembly Line.** Ground vehicles (and helicopters, coming next) can be built on the line, but planes and airships stay dealership-only. The way the line builds a vehicle can't support a fixed-wing aircraft, and airships have the same problem. The line is staying as it is, so this won't change.
 
 ## Rackcraft: The Modpack
 
-- **A "Lite" version on CurseForge.** There's one modpack on CurseForge.
+- **A "Lite" version on CurseForge.** There's one modpack on CurseForge, and it's the full one. A cut-down version would water down what the Rackcraft pack is meant to be, and the lite version that was tested didn't meet that standard.
