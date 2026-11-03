@@ -161,6 +161,11 @@ Each Rackcraft release reaches the modpack as an update, so the mod's changes ab
 - **Rackcraft updates.** Each new Rackcraft release ships as a pack update, with the quest book updated to match.
 - **Being considered: a server pack** for hosting a dedicated server, instead of hosting from your own game with Essential.
 
+## 1.0.1 (2026-11-03)
+
+- **Rackcraft 2.7.1**, with everything from 2.6.0 and 2.7.0: FTB Teams companies, the Grid Interface, Create recipes and Display Links, JEI recipe pages and Jade tooltips, and claimable ruins. A new Grid Interface quest in the Create chapter.
+- **Architectury and TaCZ: Refabricated now come straight from CurseForge.** The pack used to carry modified copies of both. Superb Warfare's screen effects still work: Rackcraft 2.7.1 handles the clash that the modified Architectury was there for.
+
 ## 1.0.0 (2026-11-01)
 
 The first release, on CurseForge. Fabric 1.20.1 with Rackcraft 2.5.0, Quartermaster and the Grid Charger, Create, TaCZ with 50 gun packs, Superb Warfare, Terralith and Tectonic, a 21-chapter quest book, and Essential and Simple Voice Chat for playing with friends.
