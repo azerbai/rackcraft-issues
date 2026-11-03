@@ -23,6 +23,10 @@ These are planned, not promised, and there are no dates. The order can change, a
 - **The vehicle line, finished.** More vehicles (helicopters included), and upgrades for line-built vehicles so building one beats buying it.
 - **Megaprojects.** Long late-game builds that use up RackCoin, materials and compute, and leave something permanent behind.
 
+## Rackcraft 2.7.1 (2026-11-03)
+
+- **Superb Warfare's screen effects work with the normal Architectury.** Architectury and Superb Warfare used to clash over how screen shaders load, which broke them, so the modpack needed a modified copy of Architectury. Rackcraft now settles the clash itself, so the pack uses Architectury straight from CurseForge.
+
 ## Rackcraft 2.7.0 (2026-11-03)
 
 - **Companies follow FTB Teams.** With FTB Teams installed, your FTB party is your company: same name, same members, and the party owner leads it. If you already had a company, your party takes it over, with its balance, research and machines. Leaving the party leaves the company. Players who aren't in a party keep the company they have.
