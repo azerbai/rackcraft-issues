@@ -18,7 +18,7 @@ Before suggesting a feature, check both: requests for something already planned,
 
 ## Crash reports
 
-1. Find the newest file in `.minecraft/crash-reports/` (in a launcher like Prism or CurseForge, open the instance's folder first). Drag the whole file into the issue form. Don't paste just the top few lines: the useful part is often near the bottom.
+1. Find the newest file in `.minecraft/crash-reports/` (if you play through a launcher, open the instance's folder first). Drag the whole file into the issue form. Don't paste just the top few lines: the useful part is often near the bottom.
 2. If there's no crash report (the game froze, or closed without one), attach `.minecraft/logs/latest.log` from right after it happened instead, before you start the game again.
 3. Say what you were doing just before: placing a block, opening a screen, launching a rocket, joining a server.
 4. Name the modpack and its version if you play one. Otherwise list the other mods you run.

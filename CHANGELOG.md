@@ -3,7 +3,7 @@
 What's coming next, and what changed in each release. There are two parts:
 
 - **[Rackcraft (the mod)](#rackcraft-the-mod)**: Rackcraft and its add-ons, Quartermaster and the Grid Charger
-- **[Rackcraft: The Modpack](#rackcraft-the-modpack)**: the CurseForge modpack built around it
+- **[Rackcraft: The Modpack](#rackcraft-the-modpack)**: the modpack built around it
 
 The newest is at the top of each.
 
@@ -25,7 +25,7 @@ These are planned, not promised, and there are no dates. The order can change, a
 
 ## Rackcraft 2.7.1 (2026-11-03)
 
-- **Superb Warfare's screen effects work with the normal Architectury.** Architectury and Superb Warfare used to clash over how screen shaders load, which broke them, so the modpack needed a modified copy of Architectury. Rackcraft now settles the clash itself, so the pack uses Architectury straight from CurseForge.
+- **Superb Warfare's screen effects work with the normal Architectury.** Architectury and Superb Warfare used to clash over how screen shaders load, which broke them, so the modpack needed a modified copy of Architectury. Rackcraft now settles the clash itself, so the pack uses the official, unmodified Architectury.
 
 ## Rackcraft 2.7.0 (2026-11-03)
 
@@ -164,8 +164,8 @@ Each Rackcraft release reaches the modpack as an update, so the mod's changes ab
 ## 1.0.1 (2026-11-03)
 
 - **Rackcraft 2.7.1**, with everything from 2.6.0 and 2.7.0: FTB Teams companies, the Grid Interface, Create recipes and Display Links, JEI recipe pages and Jade tooltips, and claimable ruins. A new Grid Interface quest in the Create chapter.
-- **Architectury and TaCZ: Refabricated now come straight from CurseForge.** The pack used to carry modified copies of both. Superb Warfare's screen effects still work: Rackcraft 2.7.1 handles the clash that the modified Architectury was there for.
+- **Architectury and TaCZ: Refabricated are now the official, unmodified releases.** The pack used to carry modified copies of both. Superb Warfare's screen effects still work: Rackcraft 2.7.1 handles the clash that the modified Architectury was there for.
 
 ## 1.0.0 (2026-11-01)
 
-The first release, on CurseForge. Fabric 1.20.1 with Rackcraft 2.5.0, Quartermaster and the Grid Charger, Create, TaCZ with 50 gun packs, Superb Warfare, Terralith and Tectonic, a 21-chapter quest book, and Essential and Simple Voice Chat for playing with friends.
+The first release. Fabric 1.20.1 with Rackcraft 2.5.0, Quartermaster and the Grid Charger, Create, TaCZ with 50 gun packs, Superb Warfare, Terralith and Tectonic, a 21-chapter quest book, and Essential and Simple Voice Chat for playing with friends.
