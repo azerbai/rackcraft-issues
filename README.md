@@ -12,7 +12,9 @@ This is the public issue tracker for **Rackcraft** (a Fabric 1.20.1 mod about bu
 
 In game, `/rcfeedback` shows the link again.
 
-**[Changelog and what's coming next](CHANGELOG.md)**
+**[Changelog and what's coming next](CHANGELOG.md)** · **[Ideas that won't be done](WONT-DO.md)**
+
+Before suggesting a feature, check both: requests for something already planned, already in the mod, or on the won't-do list are closed automatically with a link to the right place.
 
 ## Crash reports
 
@@ -35,6 +37,10 @@ Labels you'll see:
 - `fix-in-progress`: the cause is found and a fix is being prepared
 - `fixed`: fixed in a released version (the comment says which)
 - `duplicate`: already reported; follow the linked issue
+- `planned`: the idea is already in **Coming next** in the changelog
+- `already-added`: the idea is already in a released version (the comment says which)
+- `wont-do`: the idea is on the [won't-do list](WONT-DO.md)
+- `off-topic`: not about Rackcraft, its add-ons or the modpack
 
 Please keep issues to one problem each, and search the open issues first.
 

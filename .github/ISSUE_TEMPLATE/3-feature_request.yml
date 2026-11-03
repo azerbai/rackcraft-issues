@@ -3,6 +3,9 @@ description: An idea for something new in Rackcraft, or a change to something th
 title: "[Idea] "
 labels: ["feature"]
 body:
+  - type: markdown
+    attributes:
+      value: "Check **Coming next** in the [changelog](https://github.com/azerbai/rackcraft-issues/blob/main/CHANGELOG.md) and the [won't-do list](https://github.com/azerbai/rackcraft-issues/blob/main/WONT-DO.md) first. Ideas already there are closed with a link to them."
   - type: textarea
     id: idea
     attributes:

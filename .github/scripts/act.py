@@ -1,8 +1,9 @@
 """Turns the AI step's verdict (out/triage.json) into actions. Nothing the AI wrote reaches the public issue except
 values checked against fixed lists; its free text goes only to the private Rackcraft repository.
 
-Public issue:  labels, and one comment built from the fixed replies below.
-Private repo:  an issue with the diagnosis (out/owner_report.md), and a draft PR when the AI changed the source.
+Public issue:  labels, and one comment built from the fixed replies below. Feature requests that are already planned,
+               already released, on WONT-DO.md, or off-topic are labelled, answered and closed.
+Private repo:  (new requests and reports only) an issue with the diagnosis (out/owner_report.md), and a draft PR when the AI changed the source.
 
 Env: GH_TOKEN (public repo), PRIVATE_TOKEN (private repo), REPO, ISSUE, PRIVATE_REPO, PRIVATE_BRANCH.
 """
@@ -14,6 +15,8 @@ import subprocess
 from pathlib import Path
 
 KINDS = {"crash", "bug", "feature", "question", "spam"}
+FEATURE_STATUSES = {"new", "planned", "already_added", "declined", "off_topic"}
+TRACKER = "https://github.com/azerbai/rackcraft-issues/blob/main"
 CAUSES = {"rackcraft", "addon", "other_mod", "conflict", "environment", "unknown"}
 MISSING = {
     "crash_report": "the crash report: the newest file in `.minecraft/crash-reports/` (drag the whole file into a comment, or paste an https://mclo.gs link)",
@@ -22,7 +25,19 @@ MISSING = {
     "steps": "what you were doing just before it happened, or steps that make it happen",
     "screenshot": "a screenshot or short video of the problem",
 }
-LABELS = {"crash", "bug", "feature", "question", "needs-info", "other-mod", "fix-in-progress", "duplicate", "triaged", "invalid"}
+LABELS = {"crash", "bug", "feature", "question", "needs-info", "other-mod", "fix-in-progress", "duplicate", "triaged", "invalid",
+          "planned", "already-added", "wont-do", "off-topic"}
+STATUS_LABELS = {"planned": "planned", "already_added": "already-added", "declined": "wont-do", "off_topic": "off-topic"}
+
+
+def released_versions():
+    """Version numbers with a release heading in the public changelog, so `added_in` can only name a real release."""
+    try:
+        text = Path("CHANGELOG.md").read_text()
+    except OSError:
+        return set()
+    headings = re.findall(r"^## .*$", text, re.M)
+    return {ver for h in headings for ver in re.findall(r"\b\d+\.\d+(?:\.\d+)?\b", h)}
 
 
 def run(*args, token=None, check=True, cwd=None):
@@ -46,7 +61,14 @@ def verdict():
     dup = raw.get("duplicate_of")
     dup = dup if isinstance(dup, int) and dup > 0 else None
     missing = [m for m in raw.get("missing", []) if m in MISSING]
-    return {"kind": kind, "cause": cause, "mod": mod, "dup": dup, "missing": missing,
+    status = raw.get("feature_status") if raw.get("feature_status") in FEATURE_STATUSES else "new"
+    if kind != "feature":
+        status = "new"
+    added_in = str(raw.get("added_in") or "")
+    added_in = added_in if added_in in released_versions() else ""
+    if status == "already_added" and not added_in:
+        status = "new"  # can't point at a release, so let the developer decide
+    return {"kind": kind, "status": status, "added_in": added_in, "cause": cause, "mod": mod, "dup": dup, "missing": missing,
             "fix_drafted": bool(raw.get("fix_drafted")), "title": str(raw.get("owner_title", ""))[:120]}
 
 
@@ -59,6 +81,21 @@ def public_reply(v, fixing):
         items = "\n".join(f"- {MISSING[m]}" for m in v["missing"])
         return ("Thanks for the report! To work out what went wrong, please add:\n\n" + items +
                 "\n\nReply in a comment here and this issue is looked at again automatically.")
+    if v["status"] == "planned":
+        return ("Thanks for the idea! It's already planned: see **Coming next** in the "
+                f"[changelog]({TRACKER}/CHANGELOG.md). I'm closing this so the plan stays in one place; "
+                "the changelog will say when it ships.")
+    if v["status"] == "already_added":
+        return (f"Thanks for the idea! This is already out, in version {v['added_in']}: see the "
+                f"[changelog]({TRACKER}/CHANGELOG.md). If it doesn't work as described there, please open a bug report.")
+    if v["status"] == "declined":
+        return ("Thanks for the idea! This one has been considered before and won't be done; it's on the "
+                f"[won't-do list]({TRACKER}/WONT-DO.md). If something has changed that makes it worth another look, "
+                "say so in a new request.")
+    if v["status"] == "off_topic":
+        return ("Thanks! This tracker is only for Rackcraft, its add-ons and the Rackcraft modpack, and this "
+                "request is about something else, so I'm closing it. If it's about another mod, that mod's own "
+                "issue tracker is the place for it.")
     if v["kind"] == "feature":
         return "Thanks for the idea! It's been passed to the developer, who reads every request. Upvote with a 👍 if you'd like it too."
     if v["kind"] == "question":
@@ -104,7 +141,7 @@ def main():
                      token=private_token, check=False)
 
     # The diagnosis, privately: it may quote source code.
-    if private_token and v["kind"] in ("crash", "bug", "feature", "question") and not v["dup"]:
+    if private_token and v["kind"] in ("crash", "bug", "feature", "question") and not v["dup"] and v["status"] == "new":
         report = Path("out/owner_report.md").read_text() if Path("out/owner_report.md").exists() else "(no report written)"
         title = f"[{v['kind']}] {v['title'] or 'Public issue ' + issue} ({repo}#{issue})"
         body = f"Public issue: https://github.com/{repo}/issues/{issue}\n" + (f"Draft PR: {pr_url}\n" if pr_url else "") + "\n" + report
@@ -120,6 +157,8 @@ def main():
         labels.add("fix-in-progress")
     if v["dup"]:
         labels.add("duplicate")
+    if v["status"] in STATUS_LABELS:
+        labels.add(STATUS_LABELS[v["status"]])
     if v["kind"] == "spam":
         labels = {"invalid"}
     current = json.loads(run("gh", "issue", "view", issue, "-R", repo, "--json", "labels"))["labels"]
@@ -132,7 +171,9 @@ def main():
     reply = public_reply(v, bool(pr_url and pr_url.startswith("https://")))
     if reply:
         run("gh", "issue", "comment", issue, "-R", repo, "--body", reply)
-    if v["dup"] or v["kind"] == "spam":
+    if v["status"] == "already_added":
+        run("gh", "issue", "close", issue, "-R", repo, "--reason", "completed")
+    elif v["dup"] or v["kind"] == "spam" or v["status"] in ("planned", "declined", "off_topic"):
         run("gh", "issue", "close", issue, "-R", repo, "--reason", "not planned")
     print(json.dumps(v), pr_url or "")
 

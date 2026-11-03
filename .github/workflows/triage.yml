@@ -81,6 +81,10 @@ jobs:
             they say: intake/issue.md (the issue and its comments), intake/logs/ (attached crash reports and logs, possibly
             none) and intake/open_issues.md (other open issues, for duplicates).
 
+            Written by the developer, so trusted: CHANGELOG.md (released versions and "Coming next") and WONT-DO.md
+            (ideas turned down), at the top of the working directory. The procedure says how to check feature requests
+            against them.
+
             Outputs: out/triage.json and out/owner_report.md, as the procedure describes. You may edit files under
             rackcraft/ only to draft a fix, as the procedure allows. Don't write anywhere else.
 

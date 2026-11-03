@@ -7,6 +7,8 @@ What's coming next, and what changed in each release. There are two parts:
 
 The newest is at the top of each.
 
+Ideas that have been turned down are on the [won't-do list](WONT-DO.md).
+
 Found a problem with a release? [Open an issue](https://github.com/azerbai/rackcraft-issues/issues/new/choose), or type `/rcfeedback` in game.
 
 ---
