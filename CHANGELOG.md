@@ -20,8 +20,20 @@ Found a problem with a release? [Open an issue](https://github.com/azerbai/rackc
 These are planned, not promised, and there are no dates. The order can change, and feature requests can move things up. Every compat feature is optional: without the other mod, Rackcraft plays exactly as before.
 
 - **Native Create power blocks.** A Dynamo Coupler and Rack Motor that connect Rackcraft power to Create shafts directly, without Crafts & Additions.
-- **The vehicle line, finished.** More vehicles (helicopters included), and upgrades for line-built vehicles so building one beats buying it.
+- **The vehicle line, finished.** More vehicles, helicopters included.
 - **Megaprojects.** Long late-game builds that use up RackCoin, materials and compute, and leave something permanent behind.
+- **The RC-1 Rail Cannon, rebuilt (3.0).** A new model, proper effects and a proper damage model.
+
+## Rackcraft 2.8.0 (2026-11-05)
+
+- **Solar flares break things, off the Earth only.** A flare can fry unshielded racks in orbit or on the Moon, even with nobody up there. Put a Whipple Shield or Sintered Regolith overhead. It can also destroy a satellite, unless you've researched Radiation Hardening, and an unshielded Ground Link loses signal until the storm passes.
+- **Fried racks: repair or salvage.** Space Repair Kits save the rack and its modules, and a rack of better cards takes more kits. Or strip it for Fried Modules, which an E-Waste Recycler turns into silicon and chips by tier.
+- **Cold snaps.** Intakes run cooler, but cooling towers ice up. Heat waves and cold snaps now depend on the biome, and only happen in the Overworld.
+- **Hosting Contracts.** Longer leases that pay more, but only racks that aren't throttling count. Off-planet ones pay the most and only count racks in space. Keeping your promises builds a reputation that makes every offer pay better.
+- **Upgrades for line-built vehicles** (with Superb Warfare). Research up to three times the health and battery, and 20% less damage. Jade shows a vehicle's health, battery and tier.
+- **Space weather on the Ops Terminal:** the countdown to a flare, and how much of your hardware is unshielded. Four new advancements too.
+- **The RC-1 Rail Cannon is off the market until 3.0**, when it comes back rebuilt. A cannon you've already built stays but won't fire, and breaking it gives it back. You keep your rounds and research.
+- **Fix:** Compute Leases and frontier runs could lose uptime or roll back because of dimensions with none of your racks in them. A lease can now also use racks in several dimensions.
 
 ## Rackcraft 2.7.1 (2026-11-03)
 
