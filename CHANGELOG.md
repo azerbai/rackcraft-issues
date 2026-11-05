@@ -38,6 +38,16 @@ These are planned, not promised, and there are no dates. The order can change, a
 - **Chargers service parked vehicles (Grid Charger 1.1.0).** A vehicle parked within 12 blocks is repaired and its hold refills from your nearby storage. It has to be out of the fight for 10 seconds first.
 - **Solar storms cut Grid Links off the Earth,** unless the charger has a shield overhead.
 - **Fixed:** airport chargers can now be claimed by companies and FTB parties, and a Grid Link now follows you when you change company.
+- **Solar storm warnings are private now.** Your own Comms Satellite warns you a minute ahead; without one you get 10 seconds. A company leader can share their warnings with everyone: `/company stormwarnings share`.
+- **Fixed for servers with more than one company:** one company's sealed rooms could lose their air because of another company in the same dimension, a founded company's Power Beacons sent no power, random events could hit other companies' machines, and companies could see each other's clusters and autocraft jobs. Ex-members could also still reach a company's storage through a Wireless Transmitter whose chunk was unloaded.
+- **Fixed item loss:** a Cargo Pod now comes back if you break its Launch Control mid-flight, a vehicle delivery lands on top of a chest instead of replacing it, items in a terminal's crafting grid survive a disconnect, shift-crafting drops what doesn't fit, and belts no longer copy or delete part of a stack. A Storage Exporter now feeds a belt one item at a time.
+- **Moon goods aren't for sale.** Helium-3, titanium, oxygen, heat shields, lunar ice and raw ilmenite are off the Exchange: you have to go and get them, or make them. Regolith, Sintered Regolith, Excavator Teeth, Regolith Sifters and Excavators and Ascent Stages are still sold, at much higher prices, once you've researched the Lunar Landing.
+- **Vehicles need Prime Brokerage,** like guns. Top-quality AI contracts pay more than the next tier down, and no longer pay almost nothing.
+- **Fixed a server crash** when drones printed a Blueprint containing blocks with no facing, like steel blocks or floor tiles.
+- **Fixed hydrogen loss:** breaking one block of a big Hydrogen Tank no longer destroys most of what's in the rest of it. Blueprint racks get the modules they were scanned with, and a recalled warhead comes back to a buyer who was offline.
+- **Fixed on the Exchange's arms counter:** clicking an empty spot could silently buy something.
+- **More fixes for servers with several companies:** belts follow their own company's research, rivals can't use your sentries, patch panels, maglev stations or teleport pad links, fiber bandwidth is your own, building tools respect Lunar Claims, each company's plot stays put when another closes, and the ending no longer spills between companies. A broken config file also no longer stops the game from starting.
+- **Fixed:** solar flares no longer fry unclaimed racks in ruins, Moon land claims follow their beacon when it changes hands, and a very large storage network can no longer stop the server: the terminal lists what fits and says how many types it left out. Singleplayer worlds no longer inherit a storm or a running job from the last world you played.
 
 ## Rackcraft 2.7.1 (2026-11-03)
 
