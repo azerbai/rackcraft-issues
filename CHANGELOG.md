@@ -34,6 +34,10 @@ These are planned, not promised, and there are no dates. The order can change, a
 - **Space weather on the Ops Terminal:** the countdown to a flare, and how much of your hardware is unshielded. Four new advancements too.
 - **The RC-1 Rail Cannon is off the market until 3.0**, when it comes back rebuilt. A cannon you've already built stays but won't fire, and breaking it gives it back. You keep your rounds and research.
 - **Fix:** Compute Leases and frontier runs could lose uptime or roll back because of dimensions with none of your racks in them. A lease can now also use racks in several dimensions.
+- **Set your own ammo prices (Quartermaster 1.3.0).** Right-click an uplink, or press the Uplink Settings key while wearing it, to set the most it pays: a percentage of list price, RC per unit, or both. Vehicles with big magazines were stuck at the old fixed cap. You can also have it leave a share of your balance alone. The action bar now tells you when a cap or limit stopped a purchase.
+- **Chargers service parked vehicles (Grid Charger 1.1.0).** A vehicle parked within 12 blocks is repaired and its hold refills from your nearby storage. It has to be out of the fight for 10 seconds first.
+- **Solar storms cut Grid Links off the Earth,** unless the charger has a shield overhead.
+- **Fixed:** airport chargers can now be claimed by companies and FTB parties, and a Grid Link now follows you when you change company.
 
 ## Rackcraft 2.7.1 (2026-11-03)
 
