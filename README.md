@@ -12,7 +12,7 @@ This is the public issue tracker for **Rackcraft** (a Fabric 1.20.1 mod about bu
 
 In game, `/rcfeedback` shows the link again.
 
-**[Changelog and what's coming next](CHANGELOG.md)** · **[Ideas that won't be done](WONT-DO.md)**
+**[Wiki](https://azerbai.github.io/rackcraft-wiki/)** · **[Changelog and what's coming next](CHANGELOG.md)** · **[Ideas that won't be done](WONT-DO.md)**
 
 Before suggesting a feature, check both: requests for something already planned, already in the mod, or on the won't-do list are closed automatically with a link to the right place.
 
