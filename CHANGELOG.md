@@ -187,6 +187,10 @@ Each Rackcraft release reaches the modpack as an update, so the mod's changes ab
 - **Rackcraft updates.** Each new Rackcraft release ships as a pack update, with the quest book updated to match.
 - **Being considered: a server pack** for hosting a dedicated server, instead of hosting from your own game with Essential.
 
+## 1.0.2 (2026-11-06)
+
+- **Rackcraft 2.8.0**, with Quartermaster 1.3.0 and the Grid Charger 1.1.0. In the quest book, the RC-1 rail cannon quest is gone while the cannon is shelved until 3.0, and the E-Waste Recycler quest now covers Fried Modules.
+
 ## 1.0.1 (2026-11-03)
 
 - **Rackcraft 2.7.1**, with everything from 2.6.0 and 2.7.0: FTB Teams companies, the Grid Interface, Create recipes and Display Links, JEI recipe pages and Jade tooltips, and claimable ruins. A new Grid Interface quest in the Create chapter.
