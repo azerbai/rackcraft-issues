@@ -11,4 +11,5 @@ If you think one of these deserves another look because something has changed, o
 
 ## Rackcraft: The Modpack
 
+- **Create: Steam 'n' Rails.** Its trains wouldn't connect with Rackcraft's maglev, so it would be a second rail system that doesn't talk to the first.
 - **A "Lite" version of the modpack.** There's one published modpack, and it's the full one. A cut-down version would water down what the Rackcraft pack is meant to be, and the lite version that was tested didn't meet that standard.
