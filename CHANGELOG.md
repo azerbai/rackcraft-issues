@@ -20,9 +20,18 @@ Found a problem with a release? [Open an issue](https://github.com/azerbai/rackc
 These are planned, not promised, and there are no dates. The order can change, and feature requests can move things up. Every compat feature is optional: without the other mod, Rackcraft plays exactly as before.
 
 - **Native Create power blocks.** A Dynamo Coupler and Rack Motor that connect Rackcraft power to Create shafts directly, without Crafts & Additions.
-- **The vehicle line, finished.** More vehicles, helicopters included.
 - **Megaprojects.** Long late-game builds that use up RackCoin, materials and compute, and leave something permanent behind.
 - **The RC-1 Rail Cannon, rebuilt (3.0).** A new model, proper effects and a proper damage model.
+
+## Rackcraft 2.9.0 (2026-11-13)
+
+- **Helicopters on the vehicle line** (with Superb Warfare). The AH-6 and Mi-28 now build on an Assembly Line and take the line's upgrades. Planes and airships stay at Superb Warfare's table.
+- **The line replaces Superb Warfare's Vehicle Assembling Table** for every vehicle it can build. The table, JEI and the recipe book stop offering those, and the table's screen says they're built on the Assembly Line now. Boats, emplacements, planes and airships stay at the table. Server owners can turn this off in the config.
+- **Jetpack in a Trinkets slot.** With Trinkets installed, the Hydrogen Jetpack can be worn in the back slot, so your chestplate slot stays free.
+- **Xaero's Minimap waypoints.** Placing a Launch Control or Docking Port, or a survey finding a campus or data center, offers the spot as a waypoint you can click in chat.
+- **Fixed:** drifting in zero-g no longer gets you kicked for flying on servers that don't allow flight. In orbit, Ops and the Exchange now say when "No signal" is a solar storm blinding your Ground Link.
+- **Beta builds now say so.** A test build warns you to back up your world each time you join. Full releases like this one don't.
+- **Quartermaster 1.4.0** (needs Rackcraft 2.9.0): vehicle holds now carry flares or smoke, so decoys actually load. Guns on a stand without a battery no longer spam Superb Warfare warnings. The dealership keeps selling vehicles that are no longer on the table.
 
 ## Rackcraft 2.8.0 (2026-11-05)
 
