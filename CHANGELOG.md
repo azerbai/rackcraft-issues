@@ -19,9 +19,37 @@ Found a problem with a release? [Open an issue](https://github.com/azerbai/rackc
 
 These are planned, not promised, and there are no dates. The order can change, and feature requests can move things up. Every compat feature is optional: without the other mod, Rackcraft plays exactly as before.
 
-- **Native Create power blocks.** A Dynamo Coupler and Rack Motor that connect Rackcraft power to Create shafts directly, without Crafts & Additions.
-- **Megaprojects.** Long late-game builds that use up RackCoin, materials and compute, and leave something permanent behind.
-- **The RC-1 Rail Cannon, rebuilt (3.0).** A new model, proper effects and a proper damage model.
+- **Rackcraft on Forge 1.20.1 (3.1).** The same mod for Forge packs, alongside the Fabric build.
+
+## Rackcraft 3.0.0 (2026-11-21)
+
+The megaprojects update. Back up your world first: 3.0 changes launch pads, rockets and the RC-1.
+
+- **Megaprojects.** Five long late-game builds, each started from its own site block and fed RackCoin, compute and top-end parts, stage by stage. Broke means paused, never failed.
+  - **Dyson Swarm** (Megaproject Office): commissions your Dyson Mirrors into one swarm. Mirrors give up to 6 MW each, Rectennas take more, solar works at night, and the swarm shows as a ring in the sky. The new Mirror Cassette puts four mirrors up on one launch.
+  - **Lunar Mass Driver:** a line of coils on the Moon that fires stacks home to a Catcher in the Overworld every 10 seconds.
+  - **Space Elevator** (cargo only; players still ride rockets): a tether from an Anchor to your station, with climbers you can watch ride it. Moon Cargo Pods can come down it instead of burning in.
+  - **Global Network:** link abandoned data centers with your own racks for more mining and better contract pay. The Ops Terminal maps the network.
+  - **Matrioshka Brain:** five shells round the sun after Go Public. Complete, mining and compute double.
+- **Launch pads come in sizes.** 3x3 for one-stage rockets, 4x4 for two stages, 9x9 for the Saturn V. **Your existing 3x3 pads keep flying one-stage rockets**; bigger rockets need a bigger pad.
+- **Rockets are the size they should be.** About 14 blocks for one stage, 30 for two, 90 for a Saturn V, all remodelled with proper engines, the Apollo spacecraft on crewed flights and shock diamonds in the exhaust.
+- **Stages separate and fall.** Spent stages come off the rocket and tumble back to the ground, crashing in a fireball, while the next stage lights up and carries on.
+- **Ride inside the capsule.** Crewed flights put you inside the command module, with windows to look out of, instead of on the outside of the rocket.
+- **Rockets sound like rockets.** A deep, rumbling roar instead of a high crackle.
+- **Smoke looks like smoke.** Exhaust and launch clouds blend into each other instead of hiding each other behind hard-edged squares.
+- **A real countdown.** 15, 30 or 60 seconds with Launch Control's calls, LOX venting, the water deluge, engines on their hold-downs and the ground shaking.
+- **Crewed launches need a Launch Tower.** A crew access arm swings out to the rocket; walk out to board, and it swings back at T-30.
+- **Earmuffs.** Stand too close to a Saturn V without them (or a sealed Pressure Helmet) and you get three minutes of ringing ears. Nobody gets hurt.
+- **The RC-1 Rail Cannon is back.** A new gunmetal model with lit strips that show its condition, a damage model (wear, heat, Repair Kits), armour-piercing rounds that bore through, HE that throws fragments, a chase camera, and one-shot kills on Superb Warfare ground vehicles. Craters come out as clean bowls now.
+- **Weapons, sentries, the bomber and the EMP grenade remodelled**, with about twice the detail.
+- **Warheads:** no more pillars of ore left after a blast, solid mushroom clouds, and **no more long server freeze after a big warhead** (from up to a minute down to about 2 seconds).
+- **New:** a History tab on the Ops Terminal (your company's firsts, printable as a book), long-haul Fiber links between bases for better contract pay, and the Data Technician villager, who sells spare parts and buys your dead modules.
+- **Mod support** (all optional): Simple Voice Chat Intercoms and a Burner Phone company radio, Create Dynamo Coupler and Rack Motor (native, no Crafts & Additions needed), ComputerCraft peripherals for every machine, a Patchouli Rackcraft Handbook, and Distant Horizons range for the Elevator tether.
+- **Fixes:** a Survey Satellite with nothing left to find no longer stalls the server, Launch Control says exactly why a pad can't launch, and the Ops Terminal's tabs fit on big facilities.
+- **HD packs updated for 3.0.** The 2.9 HD packs don't fit the new models, so grab the 3.0 ones.
+- **Quartermaster 1.5.0** (needs 3.0): howitzers, tank guns and huge explosions close by now ring your ears like a Saturn V does (Earmuffs work on guns too), and long bursts of automatic fire right next to you muffle things a bit. Sneak-use a Delivery Marker with a Heat Shield and something in orbit, and the vehicle comes down from orbit in a Cargo Pod in a few seconds instead of on a chute.
+- **Grid Charger 1.2.0** (needs 3.0): two working Comms Satellites keep your Grid Links up through solar storms, and airports now have a 3x3 Launch Pad for your first rocket.
+- **Dev Tools 1.1.0:** scripts can wait for a command to pass (`waitfor`) and refuse to run in the wrong dimension (`require dimension`).
 
 ## Rackcraft 2.9.0 (2026-11-13)
 
